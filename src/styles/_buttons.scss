@@ -1,0 +1,34 @@
+@import "./variables";
+
+@mixin btnFormat {
+    margin: 12px;
+    padding: 12px 55px 12px 55px;
+    border-radius: 12px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.container {
+
+    &__btn1{
+        @include btnFormat();
+        &:hover {
+            color: $accentColor !important;
+            background-color: aliceblue !important;
+            border: 1px solid $accentColor !important;
+            font-weight: bold;
+            transition-duration: 0.15s !important;
+        }
+
+    }
+    &__btn2{
+        @include btnFormat();
+        &:hover {
+            background-color: aliceblue !important;
+            border: 1px solid $btnColor !important;
+            color: $btnColor !important;
+            font-weight: bold;
+            transition-duration: 0.15s !important;
+        }
+    }   
+}

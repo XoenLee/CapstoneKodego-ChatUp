@@ -1,0 +1,74 @@
+<template>
+<div class="sign-in">
+    <div class="container py-5">
+        <div class="row">
+            <div class="container__img-section col-7 gr-5">
+                <img class="container__sign-img text-center" src="../assets/sign.png" alt="head">
+            </div>
+
+            <div class="container__form-section col-5 mt-5 gx-5">
+                <div class="form">
+                    <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
+                <input type="email"  class="form-control" placeholder="email">
+                <br>
+                <input type="password"  class="form-control" placeholder="password">
+                <br>
+                <p class="mt-5 text-center">Don't have an account? <a href="/SignUp">Sign up here</a></p>
+                <button class="container__btn2">Sign In</button>
+                </div>
+                <div class="subtext text-center mt-5">
+                    <a href="">Forgot Password?</a><br>
+                    <a href="/">Go Back to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</template>
+<script>
+    export default{
+        name:'SignInView'
+    }
+        
+</script>
+
+
+
+<style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@700&display=swap');
+    @import './src/styles/_variables.scss';
+    @import './src/styles/style.scss';
+    @import './src/styles/_buttons.scss';
+
+.sign-in{
+
+    @include centerEvrything();
+
+    height:90vh;
+
+    .container{
+
+        &__sign-img{
+            height:700px;
+            width:auto;
+            margin-right: 5rem;
+        }
+
+        &__btn2{
+            color: aliceblue;
+            background-color: $btnColor;
+            border: 1px solid $btnColor;
+            width:100%;
+        }
+
+        &__sign-heading{
+            color:$secondaryColor;
+        }
+
+        &__form{
+            background-color: $backGroundColor;
+        }
+    }
+}
+</style>

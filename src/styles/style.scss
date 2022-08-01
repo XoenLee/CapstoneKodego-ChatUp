@@ -1,0 +1,15 @@
+@import './header';
+@import './variables';
+
+h1{
+    @include headerText();
+    font-weight: bolder;
+}
+
+h2{
+    font-weight: bold;
+}
+
+h4{
+    @include headerSubText();
+}

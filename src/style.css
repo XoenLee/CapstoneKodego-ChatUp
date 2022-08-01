@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
+
+/* textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+input {
+    border: none !important;
+    outline: none !important;
+} */
+textarea {
+    resize: none;
+}
