@@ -5,8 +5,8 @@
             <div class="container__img-section col-7 gr-5">
                 <img class="container__sign-img text-center" src="../assets/sign.png" alt="head">
             </div>
-
-            <div class="container__form-section col-5 mt-5 gx-5">
+            <!-- Form -->
+            <div class="container__form-section col-5 mt-5 gx-5 pt-5">
                 <div class="form">
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
                 <input type="email"  class="form-control" placeholder="email">
@@ -65,8 +65,10 @@
             color:$secondaryColor;
         }
 
-        &__form{
+        &__form-section{
             background-color: $backGroundColor;
+            border-radius: 10px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     }
 }

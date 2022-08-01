@@ -1,13 +1,17 @@
 <template>
 <div class="contact">
-    <div class="container py-5">
-        <div class="row justify-content-center">
+    <div class="container my-5">
+        <div class="row">
 
-            <div class="container__form-section col-6 mt-5 gx-5">
+            <div class="contact col-6 my-5 gx-5 pt-5">
+                <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
+            </div>
+
+            <div class="container__form-section col-6 gx-5">
                 <div class="form">
                     <div>
-                        <h2 class="container__sign-heading text-center">CONTACT US!</h2>
-                        <h4 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h4>
+                        <h2 class="container__sign-heading text-center pt-5">CONTACT US!</h2>
+                        <h4 class="container__sign-subHeading text-center mb-5 mt-3">Any question or suggestion? Shoot us a message.</h4>
                     </div>
                     <div>
                         <label for="name">Name</label>
@@ -42,6 +46,7 @@
     </div>
 </div>
 </template>
+
 <script>
     export default{
         name:'ContactUsView'
@@ -74,12 +79,20 @@
             color:$secondaryColor;
         }
 
-        &__form{
+        &__form-section{
             background-color: $backGroundColor;
+            border-radius: 10px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin:150px 0px 150px 0PX;
         }
 
         &__email-label{
-            color:  #999999;
+            color:  $secondaryColor;
+        }
+
+        &__contact-img{
+            height: 500px;
+            width: 500px;
         }
     }
 }
