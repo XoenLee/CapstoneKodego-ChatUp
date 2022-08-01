@@ -5,16 +5,18 @@
     <!-- <HomeView/> -->
     <!-- <AboutView/> -->
     <!-- <ContactUsView/> -->
+    <FooterView/>
   </div>
 </template>
 
 <script > 
 import NavBarView from './components/NavBarView.vue'
+import FooterView from './components/FooterView.vue';
 // import AboutView from './views/AboutView.vue'
 // import ContactUsView from './views/ContactUsView.vue'
 
 export default{
-    components: { NavBarView},
+    components: { NavBarView, FooterView },
     // components: { NavBarView, AboutView, ContactUsView },
     name: 'App'
 };
