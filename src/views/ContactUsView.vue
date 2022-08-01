@@ -3,6 +3,7 @@
     <div class="container my-5">
         <div class="row">
 
+<<<<<<< HEAD
             <div class="contact col-6 my-5 gx-5 pt-5">
                 <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
             </div>
@@ -12,6 +13,13 @@
                     <div>
                         <h2 class="container__sign-heading text-center pt-5">CONTACT US!</h2>
                         <h4 class="container__sign-subHeading text-center mb-5 mt-3">Any question or suggestion? Shoot us a message.</h4>
+=======
+            <div class="container__form-section col-lg-6 mt-5 gx-5">
+                <div class="form">
+                    <div>
+                        <h2 class="container__sign-heading text-center">CONTACT US!</h2>
+                        <h5 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h5>
+>>>>>>> bf54bfb0985b2481be56db7a872b2c801d64c360
                     </div>
                     <div>
                         <label for="name">Name</label>
@@ -29,14 +37,14 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here..."></textarea>
                     </div>
                     <div class="container__button">
-                    <button class="container__btn2 mx-0 mb-3 w-100">SUBMIT</button>
+                    <button class="container__btn2 mx-0 mb-3 w-100">SEND MESSAGE</button>
                     </div>
 
                 </div>
                 <!-- End of form -->
                 <div class="m-3">
                     <label class="container__email-label" for="name">EMAIL US</label>
-                    <p class="border-bottom">chatup-message@gmail.com</p>
+                    <p class="container__email-us border-bottom">chatup-message@gmail.com</p>
                 </div>
                 <div class="subtext text-center mt-5">
                     <a href="/">Go Back to Homepage</a>
@@ -65,8 +73,6 @@
 
     @include centerEvrything();
 
-    height:90vh;
-
     .container{
 
         &__btn2{
@@ -93,6 +99,10 @@
         &__contact-img{
             height: 500px;
             width: 500px;
+        }
+
+        &__email-us{
+            color: $secondaryColor;
         }
     }
 }

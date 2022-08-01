@@ -13,3 +13,12 @@ h2{
 h4{
     @include headerSubText();
 }
+
+h5{
+    font-size: 1.2rem;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 500;
+    background-color: $secondaryColor;
+    padding: 5px;
+}
