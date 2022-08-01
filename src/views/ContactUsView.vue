@@ -25,14 +25,14 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here..."></textarea>
                     </div>
                     <div class="container__button">
-                    <button class="container__btn2 mx-0 mb-3 w-100">SUBMIT</button>
+                    <button class="container__btn2 mx-0 mb-3 w-100">SEND MESSAGE</button>
                     </div>
 
                 </div>
                 <!-- End of form -->
                 <div class="m-3">
                     <label class="container__email-label" for="name">EMAIL US</label>
-                    <p class="border-bottom">chatup-message@gmail.com</p>
+                    <p class="container__email-us border-bottom">chatup-message@gmail.com</p>
                 </div>
                 <div class="subtext text-center mt-5">
                     <a href="/">Go Back to Homepage</a>
@@ -80,6 +80,10 @@
 
         &__email-label{
             color:  #999999;
+        }
+
+        &__email-us{
+            color: $secondaryColor;
         }
     }
 }
