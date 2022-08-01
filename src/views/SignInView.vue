@@ -14,7 +14,7 @@
                 <input type="password"  class="form-control" placeholder="password">
                 <br>
                 <p class="mt-5 text-center">Don't have an account? <a href="/SignUp">Sign up here</a></p>
-                <button class="container__btn2">Sign In</button>
+                <button class="container__btn2 mx-0 mb-3 w-100">Sign In</button>
                 </div>
                 <div class="subtext text-center mt-5">
                     <a href="">Forgot Password?</a><br>
@@ -59,7 +59,6 @@
             color: aliceblue;
             background-color: $btnColor;
             border: 1px solid $btnColor;
-            width:100%;
         }
 
         &__sign-heading{
