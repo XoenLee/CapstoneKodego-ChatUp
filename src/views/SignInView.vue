@@ -2,11 +2,11 @@
 <div class="sign-in">
     <div class="container py-5">
         <div class="row">
-            <div class="container__img-section col-7 gr-5">
+            <div class="container__img-section col-lg-7 gr-5 d-none d-lg-block">
                 <img class="container__sign-img text-center" src="../assets/sign.png" alt="head">
             </div>
 
-            <div class="container__form-section col-5 mt-5 gx-5">
+            <div class="container__form-section col-lg-5 mt-5 gx-5">
                 <div class="form">
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
                 <input type="email"  class="form-control" placeholder="email">
@@ -45,13 +45,10 @@
 
     @include centerEvrything();
 
-    height:90vh;
-
     .container{
 
         &__sign-img{
-            height:700px;
-            width:auto;
+            width: 100%;
             margin-right: 5rem;
         }
 

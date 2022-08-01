@@ -3,11 +3,11 @@
     <div class="container py-5">
         <div class="row justify-content-center">
 
-            <div class="container__form-section col-6 mt-5 gx-5">
+            <div class="container__form-section col-lg-6 mt-5 gx-5">
                 <div class="form">
                     <div>
                         <h2 class="container__sign-heading text-center">CONTACT US!</h2>
-                        <h4 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h4>
+                        <h5 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h5>
                     </div>
                     <div>
                         <label for="name">Name</label>
@@ -59,8 +59,6 @@
 .contact{
 
     @include centerEvrything();
-
-    height:90vh;
 
     .container{
 
