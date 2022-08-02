@@ -6,7 +6,11 @@
                 <img class="container__sign-img text-center" src="../assets/sign.png" alt="head">
             </div>
             <!-- Form -->
+<<<<<<< HEAD
             <div class="container__form-section col-lg-5 mt-5 gx-5 py-5">
+=======
+            <div class="container__form-section col-5 mt-5 gx-5 pt-5">
+>>>>>>> ec85e9da365ffeb08ea8b374d9733054964469ce
                 <div class="form">
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
                 <input type="email"  class="form-control" placeholder="email">

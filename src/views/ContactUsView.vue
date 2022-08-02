@@ -3,6 +3,7 @@
     <div class="container my-5">
         <div class="row">
 
+<<<<<<< HEAD
             <div class="contact col-lg-6 my-5 gx-5 py-5">
                 <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
             </div>
@@ -12,6 +13,17 @@
                     <div>
                         <h2 class="container__sign-heading text-center">CONTACT US!</h2>
                         <h5 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h5>
+=======
+            <div class="contact col-6 my-5 gx-5 pt-5">
+                <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
+            </div>
+
+            <div class="container__form-section col-6 gx-5">
+                <div class="form">
+                    <div>
+                        <h2 class="container__sign-heading text-center pt-5">CONTACT US!</h2>
+                        <h4 class="container__sign-subHeading text-center mb-5 mt-3">Any question or suggestion? Shoot us a message.</h4>
+>>>>>>> ec85e9da365ffeb08ea8b374d9733054964469ce
                     </div>
                     <div>
                         <label for="name">Name</label>
@@ -57,9 +69,9 @@
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@700&display=swap');
-    @import './src/styles/_variables.scss';
-    @import './src/styles/style.scss';
-    @import './src/styles/_buttons.scss';
+@import './src/styles/_variables.scss';
+@import './src/styles/style.scss';
+@import './src/styles/_buttons.scss';
 
 .contact{
 
