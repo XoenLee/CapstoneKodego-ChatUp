@@ -3,8 +3,7 @@
     <div class="container my-5">
         <div class="row">
 
-<<<<<<< HEAD
-            <div class="contact col-lg-6 my-5 gx-5 py-5">
+            <div class="contact col-lg-6 my-3 gx-5 py-5">
                 <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
             </div>
 
@@ -13,17 +12,6 @@
                     <div>
                         <h2 class="container__sign-heading text-center">CONTACT US!</h2>
                         <h5 class="container__sign-subHeading text-center mb-5">Any question or suggestion? Shoot us a message.</h5>
-=======
-            <div class="contact col-6 my-5 gx-5 pt-5">
-                <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
-            </div>
-
-            <div class="container__form-section col-6 gx-5">
-                <div class="form">
-                    <div>
-                        <h2 class="container__sign-heading text-center pt-5">CONTACT US!</h2>
-                        <h4 class="container__sign-subHeading text-center mb-5 mt-3">Any question or suggestion? Shoot us a message.</h4>
->>>>>>> ec85e9da365ffeb08ea8b374d9733054964469ce
                     </div>
                     <div>
                         <label for="name">Name</label>
@@ -37,8 +25,8 @@
                     </div>
                 <br>
                     <div class="mb-3">
-                        <label for="Textarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here..."></textarea>
+                        <label for="Textarea" class="form-label">Message</label>
+                        <textarea class="form-control" id="FormControlTextarea" rows="5" placeholder="Write your message here..."></textarea>
                     </div>
                     <div class="container__button">
                     <button class="container__btn2 mx-0 mb-3 w-100">SEND MESSAGE</button>
@@ -46,13 +34,14 @@
 
                 </div>
                 <!-- End of form -->
-                <div class="m-3">
+                <div class="m-3 text-center">
                     <label class="container__email-label" for="name">EMAIL US</label>
                     <p class="container__email-us border-bottom">chatup-message@gmail.com</p>
                 </div>
-                <div class="subtext text-center mt-5">
-                    <a href="/">Go Back to Homepage</a>
-                </div>
+                <router-link to="/">
+                    <p class="text-center mt-5"> Go Back to Homepage </p>
+                </router-link>
+                
             </div>
         </div>
     </div>

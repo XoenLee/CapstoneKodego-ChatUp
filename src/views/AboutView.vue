@@ -1,6 +1,6 @@
 <template>
     <div class="about-us" id="about">
-        <div class="container mt-5">
+        <div class="container mt-5 animate__animated animate__slideInLeft">
             <div class="row">
                 <div class="col-lg-6 text-center gr-2">
                     <h2 class="container__about-heading">ABOUT US</h2>
@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="feature">
+    <div class="feature animate__animated animate__slideInRight">
         <div class="container p-4 bg-opacity-50">
             <h2 class=" container__feature-heading text-center">WE ARE THE BEST SOLUTION FOR YOUR COMMUNICATION</h2>
             <p class="container__feature-subHeading text-center">There are already more than 3 MILLION users around the world!</p>
@@ -62,6 +62,7 @@
     @import './src/styles/_header.scss';
     @import './src/styles/style.scss';
     @import './src/styles/_buttons.scss';
+    @import 'animate.css';
 
 .about-us{
 
@@ -86,6 +87,17 @@
 
 .feature{
     margin-top: 5rem;
+
+    .animate__animated .animate__slideInLeft{
+        animation-duration: 2.5s;
+        animation-delay: 1s;
+    }
+
+    .animate__animated .animate__slideInRight{
+        animation-duration: 2.8s;
+        animation-delay: 1s;
+    }
+    
 
     .container{
         background-color: $backGroundColor;
