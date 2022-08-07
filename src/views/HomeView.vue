@@ -31,7 +31,7 @@ export default {
   @import './src/styles/_header.scss';
   @import './src/styles/style.scss';
   @import './src/styles/_buttons.scss';
-  @import 'animate.css';
+  // @import 'animate.css';
   .wrapper{
     background: url(../assets/banner.png);
     background-repeat: no-repeat;

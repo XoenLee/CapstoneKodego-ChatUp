@@ -2,7 +2,7 @@
     <div class="forgotPass">
     <div class="container">
         <div class="row">
-            <div class="container__img-section col-lg-7 d-none d-lg-block my-5 gx-5 py-5">
+            <div class="container__img-section col-lg-7 d-none d-lg-block gx-5">
                 <img class="container__forgot-img text-center" src="../assets/forgot-img.png" alt="">
             </div>
             <!-- Form -->

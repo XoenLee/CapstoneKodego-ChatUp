@@ -2,12 +2,7 @@
 <div class="contact">
     <div class="container my-5">
         <div class="row">
-
-<<<<<<< HEAD
-            <div class="contact col-lg-6 mt-5 gx-5 py-5">
-=======
             <div class="contact col-lg-6 my-3 gx-5 py-5">
->>>>>>> 26fce6970c3ad2e6a4a4c9e9307b2db4ef796c8b
                 <img class="container__contact-img text-center mb-5" src="../assets/contact-image.png" alt="head">
             </div>
 
