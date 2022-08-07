@@ -7,7 +7,7 @@
                         <h2 class="container__404-heading text-center pt-5">Oops! Looks Like Something Wrong!</h2>
 
                         <router-link to="/">
-                        <button class="container__btn2">Go Back</button>
+                            <button class="container__btn2">Go Back to Homepage</button>
                         </router-link>
                 </div>
             </div>

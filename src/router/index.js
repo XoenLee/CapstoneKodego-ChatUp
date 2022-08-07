@@ -6,6 +6,7 @@ import ContactUsViewVue from '@/views/ContactUsView.vue'
 import SignInViewVue from '@/views/SignInView.vue'
 import SignUpViewVue from '@/views/SignUpView.vue'
 import PageNotFoundVue from '@/views/PageNotFound.vue'
+import ForgotPasswordViewVue from '@/views/ForgotPasswordView.vue'
 
 
 
@@ -47,6 +48,11 @@ const routes = [
     component: SignUpViewVue
   },
 
+  {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: ForgotPasswordViewVue
+  },
 
   {
     path: '/:pathMacth(.*)*',

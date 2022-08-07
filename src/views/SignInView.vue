@@ -9,17 +9,42 @@
             <div class="container__form-section col-lg-5 mt-5 gx-5 py-5">
                 <div class="form">
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
+<<<<<<< HEAD
                     <input type="email"  class="form-control" placeholder="Email">
                     <br>
                     <input type="password"  class="form-control" placeholder="Password">
                     <br>
                     <p class="mt-5 text-center">Don't have an account? <a href="/SignUp">Sign up here</a></p>
                     <button class="container__btn2 mx-0 mb-3 w-100">Sign In</button>
+=======
+                <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                <input type="email"  class="form-control" placeholder="email">
+                </div>
+                <br>
+                <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                <input type="password"  class="form-control" placeholder="password">
+                </div>
+                <br>
+                
+                <p class="mt-5 text-center">Don't have an account? 
+                    <router-link to="/SignUp">
+                        Sign-up here
+                    </router-link>
+                </p>
+                <button class="container__btn2 mx-0 mb-3 w-100">Sign In</button>
+>>>>>>> 26fce6970c3ad2e6a4a4c9e9307b2db4ef796c8b
                 </div>
                 <div class="subtext text-center mt-5">
-                    <a href="">Forgot Password?</a><br>
-                    <a href="/">Go Back to Homepage</a>
+                    <router-link to="/ForgotPassword">
+                        <p> Forgot Password?</p>
+                    </router-link>
+                    <router-link to="/">
+                        <p> Go Back to Homepage</p>
+                    </router-link>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -36,10 +61,10 @@
 
 
 <style lang="scss" scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@700&display=swap');
-    @import './src/styles/_variables.scss';
-    @import './src/styles/style.scss';
-    @import './src/styles/_buttons.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&family=Roboto:wght@700&display=swap');
+@import './src/styles/_variables.scss';
+@import './src/styles/style.scss';
+@import './src/styles/_buttons.scss';
 
 .sign-in{
 
