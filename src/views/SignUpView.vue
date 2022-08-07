@@ -6,12 +6,12 @@
             <div class="card text-black" style="border-radius: 25px;">
                 <div class="container__card-body p-md-5">
                     <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                        <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1">
 
-                        <h2 class="container__sign-heading text-center pt-5">SIGN-UP!</h2>
-                        <h4 class="container__sign-subHeading text-center mb-5 mt-3">Create an account, it’s Free</h4>
+                            <h2 class="container__sign-heading text-center pt-5">SIGN-UP!</h2>
+                            <h4 class="container__sign-subHeading text-center mb-5 mt-3">Create an account, it’s Free</h4>
 
-                        <form class="mx-1 mx-md-4">
+                            <form class="mx-1 mx-md-4">
 
                             <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -59,7 +59,7 @@
                         </form>
 
                         </div>
-                        <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                        <div class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2">
                             <img class="container__signUp-img text-center mb-5" src="../assets/signUp-img.png" alt="head">
                         </div>
                     </div>
@@ -99,8 +99,9 @@
         }
 
         &__signUp-img{
-            height: 600px;
-            width:600px;
+            width: 100%;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         &__btn2 {

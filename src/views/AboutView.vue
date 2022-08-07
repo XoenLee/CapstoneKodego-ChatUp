@@ -14,7 +14,7 @@
                 </div>
 
                 
-                <div class="col-lg-6">
+                <div class="col-lg-6 text-center">
                     <img class="container__img text-center" src="../assets/about-img.png" alt="head">
                 </div>
             </div>
