@@ -7,11 +7,11 @@
             </div>
             <!-- Form -->
             <div class="container__form-section col-lg-5 mt-5 gx-5 py-5">
-                <div class="form">
+                <form class="form" v-on:submit.prevent="Login">
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                        <input type="email"  class="form-control" placeholder="email">
+                        <input type="text" v-model="username" class="form-control" placeholder="username">
                     </div>
                     <br>
                     <div class="d-flex flex-row align-items-center mb-4">
@@ -26,8 +26,8 @@
                             Sign-up here
                         </router-link>
                     </p>
-                    <button class="container__btn2 mx-0 mb-3 w-100">Sign In</button>
-                </div>
+                    <button class="container__btn2 mx-0 mb-3 w-100">Sign In<span v-if="showSpinner" class="fa fa-spin fa-spinner"></span></button>
+                </form>
                 
                 <div class="subtext text-center mt-5">
                     <router-link to="/ForgotPassword">
@@ -44,9 +44,63 @@
 
 </template>
 <script>
+import { CometChat } from "@cometchat-pro/chat";
     export default{
-        name:'SignInView'
+        name:'SignInView',
+        data() {
+        return {
+        username: "",
+        showSpinner: false
+        };
+    },
+    methods: {
+        Login() {
+        var AUTH_KEY ='9018a57a030873ee45fe5b5549e917d60b184f10';
+        this.showSpinner = true;
+                    var user = new CometChat.User(this.username);
+                    user.setName(this.username);
+                    CometChat.createUser(user, AUTH_KEY).then(
+                    user => {
+                        console.log("user created", user);
+                        this.showSpinner = false;
+                        CometChat.login(this.username,AUTH_KEY).then(
+                        (data) => {
+                            console.log(data)
+                            this.showSpinner = false;
+                            this.$router.push({
+                                name: "chat"
+                            });
+                        },
+                        error => {
+                            this.showSpinner = false;
+                            alert("Whops. Something went wrong. This commonly happens when you enter a username that doesn't exist. Check the console for more information")
+                            console.log("Login failed with error:", error.code);
+                        }
+                        )
+                        },
+                    error => {
+                        console.log( error.code);    
+                        this.showSpinner = false;
+                        CometChat.login(this.username,AUTH_KEY).then(
+                        (data) => {
+                            console.log(data)
+                            this.showSpinner = false;
+                            this.$router.push({
+                                name: "chat"
+                            });
+                        },
+                        error => {
+                            this.showSpinner = false;
+                            alert("Whops. Something went wrong. This commonly happens when you enter a username that doesn't exist. Check the console for more information")
+                            console.log("Login failed with error:", error.code);
+                        }
+                        )
+                    }
+                    )                
+                }
+                
     }
+    };
         
 </script>
 

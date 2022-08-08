@@ -7,8 +7,8 @@ import SignInViewVue from '@/views/SignInView.vue'
 import SignUpViewVue from '@/views/SignUpView.vue'
 import PageNotFoundVue from '@/views/PageNotFound.vue'
 import ForgotPasswordViewVue from '@/views/ForgotPasswordView.vue'
-
-
+import ChatApp from '../views/ChatApp.vue'
+import Login from '../views/SignInView.vue'
 
 const routes = [
   
@@ -16,6 +16,12 @@ const routes = [
     path: '/',
     name: 'HomeView',
     component: HomeView
+  },
+
+  {
+    path: '/Forgot',
+    name: 'ForgotPassword',
+    component: ForgotPasswordViewVue
   },
 
   {
@@ -48,24 +54,29 @@ const routes = [
     component: SignUpViewVue
   },
 
-  {
-    path: '/ForgotPassword',
-    name: 'ForgotPassword',
-    component: ForgotPasswordViewVue
-  },
 
   {
     path: '/:pathMacth(.*)*',
     name: 'PageNotFoundVue',
     component: PageNotFoundVue
   },
-  
-
+  {
+    path: '/',
+    name: 'homepage',
+    redirect: 'login'
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: ChatApp
+  }
 
 ]
-
-
-
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
