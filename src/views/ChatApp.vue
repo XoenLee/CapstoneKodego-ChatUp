@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <CometChatUserListWithMessages/>
-    <button v-on:click="logout" class="btn-logout btn btn-primary">Logout</button>
+    <button v-on:click="logout" class="container__btn2">Logout</button>
 </div>
 </template>
 
@@ -29,15 +29,19 @@ CometChatUserListWithMessages
 </script>
 
 <style lang="scss" scoped>
-@import './src/styles/variables';
+@import './src/styles/_variables.scss';
+@import './src/styles/_buttons.scss';
 
   .container {
     min-height: 90vh;
-  }
-  button.btn-logout {
-    width: 100%;
-    background-color: $btnColor;
-    margin-top: 5%;
+
+    &__btn2 {
+          font-size: large;
+          color: aliceblue;
+          border: 1px solid $btnColor;
+          background-color: $btnColor;
+          margin-top: 2rem;
+        }
   }
 
 </style>
