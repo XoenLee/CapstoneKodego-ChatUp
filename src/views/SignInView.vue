@@ -11,12 +11,12 @@
                     <h2 class="container__sign-heading text-center mb-5">SIGN-IN</h2>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                        <input type="text" v-model="username" class="form-control" placeholder="username">
+                        <input type="text" v-model="username" class="form-control" placeholder="Username">
                     </div>
                     <br>
                     <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                        <input type="password"  class="form-control" placeholder="password">
+                        <input type="password"  class="form-control" placeholder="Password">
                     </div>
                     <br>
                 
