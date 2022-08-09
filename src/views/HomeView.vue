@@ -3,7 +3,7 @@
     <div class="container__home">
       <div class="container__heroSection">
         <h1 class="container__heroText animate__animated animate__bounce">The world is closer <br>than ever with <span>CHATUP</span></h1>
-        <h4 class="mb-5">The best way to keep in touch with your friends anywhere in the world!</h4> 
+        <h4 class="container__heroSubText">The best way to keep in touch with your friends anywhere in the world!</h4> 
       </div> 
       <div class="container__buttons">
         <router-link to="/SignIn">
@@ -56,6 +56,10 @@ export default {
         font-family: 'Poppins', sans-serif;
         color: $secondaryColor;
         line-height: 1em;
+      }
+
+      &__heroSubText {
+        margin-bottom: 10rem;
       }
 
       &__buttons {
