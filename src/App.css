@@ -58,11 +58,6 @@
   align-items: center;
 }
 
-.active {
-  font-family: 'Poppins';
-  width: 120px;
-  float: left;
-}
 
 .active h5 {
   padding: 10px;
