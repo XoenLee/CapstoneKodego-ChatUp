@@ -46,12 +46,6 @@ export default{
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap');
-#app{
-  font-family: Poppins;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
 </style>
 
 
