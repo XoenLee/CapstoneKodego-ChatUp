@@ -16,7 +16,7 @@
                             <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
-                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name"/>
+                                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Full Name"/>
                                     <!-- <label class="form-label" for="form3Example1c">Your Name</label> -->
                                 </div>
                             </div>
@@ -53,8 +53,8 @@
                                 </div>
                             </div>
 
-                            <div class="form-check d-flex justify-content-center mb-5">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                            <div class="form-check justify-content-center mb-5">
+                                <input class="form-check-input" type="checkbox" value="" id="form2Example3c" />
                                 <label class="form-check-label" for="form2Example3">
                                 I agree all statements in Terms of service
                                 </label>

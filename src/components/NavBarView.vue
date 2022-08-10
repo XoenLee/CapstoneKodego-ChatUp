@@ -1,22 +1,4 @@
 <template>
-<!-- <div class="container-fluid navbar navbar-expand navbar-light bg-light">
-    <div class="container-fluid w-75">
-        <a class="navbar-brand"><img class="container__logo" src="../assets/Chatup-logo.png" alt="head"></a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
-            <div class="navbar-nav navbarCustom">
-                <router-link to="/" class="nav-item nav-link mx-3">HOME</router-link>
-                <router-link to="/About" class="nav-item nav-link mx-3">ABOUT</router-link>
-                <router-link to="/Contact" class="nav-item nav-link mx-3">CONTACT</router-link>
-            </div>
-        </div>
-    </div>
-</div> -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid w-75">
             <a class="navbar-brand"><img class="container__logo" src="../assets/Chatup-logo.png" alt="head"></a>

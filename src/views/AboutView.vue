@@ -62,7 +62,7 @@
     @import './src/styles/_header.scss';
     @import './src/styles/style.scss';
     @import './src/styles/_buttons.scss';
-    // @import 'animate.css';
+    @import 'animate.css';
 
 .about-us{
 
@@ -122,8 +122,9 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-top:2rem;
-            }
+            
     }
+}
 }
 
 .row{

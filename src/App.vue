@@ -9,14 +9,11 @@
 <script > 
 import NavBarView from './components/NavBarView.vue';
 import FooterView from './components/FooterView.vue';
-// import AboutView from './views/AboutView.vue'
-// import ContactUsView from './views/ContactUsView.vue'
 import { CometChat } from "@cometchat-pro/chat";
 import './App.css'
 
 export default{
     components: { NavBarView, FooterView },
-    // components: { NavBarView, AboutView, ContactUsView },
     name: 'App',
     
     created(){
