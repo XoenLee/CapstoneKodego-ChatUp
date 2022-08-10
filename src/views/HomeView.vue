@@ -59,7 +59,7 @@ export default {
       }
 
       &__heroSubText {
-        margin-bottom: 10rem;
+        margin-bottom: 3.5rem;
       }
 
       &__buttons {
