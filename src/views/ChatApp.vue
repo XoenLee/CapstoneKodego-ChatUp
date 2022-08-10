@@ -1,35 +1,34 @@
 <template>
-<div class="container">
+<div class="container" id="app">
   <CometChatUI/>
+  
     <button v-on:click="logout" class="container__btn2">Logout</button>
 </div>
 </template>
 
 <script>
-// import { CometChat } from "@cometchat-pro/chat";
+import { CometChat } from "@cometchat-pro/chat";
 import { CometChatUI } from "../cometchat-ui/src"
-// import {CometChatUserListWithMessages} from '../cometchat-ui/src'
+// import CometChatUserListWithMessages from "@/cometchat-ui/src/components/Users/CometChatUserListWithMessages/CometChatUserListWithMessages.vue";
 export default {
   components:{
     CometChatUI,
-   }
- };
-// CometChatUserListWithMessages
-//   },
-//   methods:{
-//     async logout(){
+},
+  methods:{
+    async logout(){
   
-//   try {
-//     await CometChat.logout();
-//     this.$router.push({
-//         name: "homepage"
-//       });
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-//   }
-//   }
+  try {
+    await CometChat.logout();
+    this.$router.push({
+        name: "homepage"
+      });
+  } catch (error) {
+    console.error(error);
+  }
+}
+  }
+}
+
 </script>
 
 <style lang="scss" scoped>

@@ -1,10 +1,7 @@
 <template>
-  <div id="app">
+  <div>
     <NavBarView/>
     <router-view/>
-    <!-- <HomeView/> -->
-    <!-- <AboutView/> -->
-    <!-- <ContactUsView/> -->
     <FooterView/>
   </div>
 </template>
@@ -15,7 +12,7 @@ import FooterView from './components/FooterView.vue';
 // import AboutView from './views/AboutView.vue'
 // import ContactUsView from './views/ContactUsView.vue'
 import { CometChat } from "@cometchat-pro/chat";
-// import './App.css'
+import './App.css'
 
 export default{
     components: { NavBarView, FooterView },
@@ -26,7 +23,7 @@ export default{
     this.initializeComet()},
     methods: {
       initializeComet(){
-        const APP_ID= '215909698deb2e05';
+            const APP_ID= '215909698deb2e05';
             const REGION= 'us';
             const appSetting = new CometChat.AppSettingsBuilder()
               .subscribePresenceForAllUsers()
