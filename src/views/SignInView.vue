@@ -30,7 +30,7 @@
                 </form>
                 
                 <div class="subtext text-center mt-5">
-                    <router-link to="/ForgotPassword">
+                    <router-link to="/Forgot">
                         <p> Forgot Password?</p>
                     </router-link>
                     <router-link to="/">

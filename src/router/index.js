@@ -9,6 +9,7 @@ import ForgotPasswordViewVue from '@/views/ForgotPasswordView.vue'
 import ChatApp from '../views/ChatApp.vue'
 import Login from '../views/SignInView.vue'
 
+
 const routes = [
   
   {
