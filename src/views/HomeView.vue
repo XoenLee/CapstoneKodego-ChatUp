@@ -40,14 +40,18 @@
                 <div class="col-lg-4 text-center">
                     <img class="container__feat-img" src="../assets/feat1.png" alt="head">
                     <h4 class="container__feat-subName text-center">FREE PREMIUM FEATURES</h4>
+                    <p> Chat App are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+
                 </div>
                 <div class="col-lg-4 text-center">
                     <img class="container__feat-img" src="../assets/feat2.png" alt="head">
                     <h4 class="container__feat-subName">REAL-TIME PUSH MESSAGE</h4>
+                    <p>Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <img class="container__feat-img" src="../assets/feat3.png" alt="head">
                     <h4 class="container__feat-subName">EASY TO USE INTERFACE</h4>
+                    <p>Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
                 </div>
                 <div class="container__buttons text-center py-5">
                   <router-link to="/About">
