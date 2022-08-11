@@ -16,6 +16,7 @@
     "dateformat": "^4.5.1",
     "emoji-mart-vue-fast": "^8.0.3",
     "eslint-config": "^0.1.0",
+    "firebase": "^8.2.1",
     "twemoji": "^13.0.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",

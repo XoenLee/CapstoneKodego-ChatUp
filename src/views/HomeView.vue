@@ -1,8 +1,9 @@
 <template>
+<section>
   <div class="wrapper">
     <div class="container__home">
       <div class="container__heroSection">
-        <h1 class="container__heroText animate__animated animate__bounce">The world is closer <br>than ever with <span>CHATUP</span></h1>
+        <h1 class="container__heroText">The world is closer <br>than ever with <span>CHATUP</span></h1>
         <h4 class="container__heroSubText">The best way to keep in touch with your friends anywhere in the world!</h4> 
       </div> 
       <div class="container__buttons">
@@ -70,6 +71,7 @@
       </router-link>
     </div>
   </div>
+</section>
 </template>
 
 <script>
@@ -85,7 +87,7 @@ export default {
   @import './src/styles/_header.scss';
   @import './src/styles/style.scss';
   @import './src/styles/_buttons.scss';
-  // @import 'animate.css';
+
   .wrapper{
     background: url(../assets/banner.png);
     background-repeat: no-repeat;

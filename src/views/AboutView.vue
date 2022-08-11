@@ -1,4 +1,5 @@
 <template>
+<section>
     <div class="about-us" id="about">
         <div class="container mt-5 animate__animated animate__slideInLeft">
             <div class="row">
@@ -47,8 +48,7 @@
             </div>
         </div>
     </div>
-    
-
+</section>
 </template>
 <script>
     export default{

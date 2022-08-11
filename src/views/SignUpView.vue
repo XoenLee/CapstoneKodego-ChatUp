@@ -17,15 +17,13 @@
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="text" id="form3Example1c" class="form-control" placeholder="Your Full Name"/>
-                                    <!-- <label class="form-label" for="form3Example1c">Your Name</label> -->
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                            <i class="fa-regular fa-user fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="text" id="form3Example2c" class="form-control" placeholder="Username"/>
-                                    <!-- <label class="form-label" for="form3Example3c">Your Username</label> -->
                                 </div>
                             </div>
 
@@ -33,7 +31,6 @@
                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="email" id="form3Example3c" class="form-control" placeholder="Email"/>
-                                    <!-- <label class="form-label" for="form3Example3c">Your Email</label> -->
                                 </div>
                             </div>
 
@@ -41,7 +38,6 @@
                             <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="password" id="form3Example4c" class="form-control" placeholder="Password"/>
-                                    <!-- <label class="form-label" for="form3Example4c">Password</label> -->
                                 </div>
                             </div>
 
@@ -49,8 +45,16 @@
                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Password"/>
-                                    <!-- <label class="form-label" for="form3Example4cd">Repeat your password</label> -->
                                 </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fa-solid fa-mars-and-venus fa-lg me-3 fa-fw"></i>
+                                <select class="container__form-select form-select-sm flex-fill mb-0 ">
+                                    <option selected>Gender</option>
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                </select>
                             </div>
 
                             <div class="form-check justify-content-center mb-5">
@@ -118,7 +122,11 @@
             background-color: $btnColor;
         }
 
-        
+        &__form-select{
+            border-radius: 2rem;
+            border: none;
+            height: 2rem;
+        }
     }
 }
 
