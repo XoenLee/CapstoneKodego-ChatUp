@@ -1,3 +1,4 @@
+// import { nullableTypeAnnotation } from '@babel/types'
 import { createStore } from 'vuex'
 
 export default createStore({
@@ -6,8 +7,6 @@ export default createStore({
   getters: {
   },
   mutations: {
-  },
-  actions: {
   },
   modules: {
   }

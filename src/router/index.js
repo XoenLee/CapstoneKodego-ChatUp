@@ -8,6 +8,7 @@ import PageNotFoundVue from '@/views/PageNotFound.vue'
 import ForgotPasswordViewVue from '@/views/ForgotPasswordView.vue'
 import ChatApp from '../views/ChatApp.vue'
 import Login from '../views/SignInView.vue'
+import Edit from '../views/EditView.vue'
 
 
 const routes = [
@@ -17,7 +18,11 @@ const routes = [
     name: 'HomeView',
     component: HomeView
   },
-
+  {
+    path: '/edit/:id',
+    name: 'Edit',
+    component: Edit
+  },
   {
     path: '/Forgot',
     name: 'ForgotPassword',

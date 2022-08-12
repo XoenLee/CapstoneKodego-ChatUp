@@ -1,5 +1,5 @@
 <template>
-<div class="sign-up">
+<div class="update-user">
 <div class="container py-5">
     <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -11,7 +11,7 @@
                             <h2 class="container__sign-heading text-center pt-5">SIGN-UP!</h2>
                             <h4 class="container__sign-subHeading text-center mb-5 mt-3">Create an account, it’s Free</h4>
 
-                            <form class="mx-1 mx-md-4" @submit.prevent="createchatuser(); onSubmit(); pressed();">
+                            <form class="mx-1 mx-md-4" @submit.prevent="update">
 
                             <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -48,7 +48,7 @@
                             <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
-                                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Password" v-model="form.passwordConfirm" />
+                                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Password"/>
                                     <!-- <label class="form-label" for="form3Example4cd">Repeat your password</label> -->
                                 </div>
                             </div>
@@ -59,14 +59,12 @@
                                 I agree all statements in Terms of service
                                 </label>
                             </div>
+
                             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                 <button class="container__btn2 mx-0 mb-3 w-100" type="submit" >Register</button>
                             </div>
-                        </form>
-                        <div class="error" v-if="error">{{error.message}}</div>
-                            
 
-                        
+                        </form>
 
                         </div>
                         <div class="col-md-10 col-lg-6 col-xl-6 d-flex align-items-center order-1 order-lg-2">
@@ -84,61 +82,22 @@
 </template>
 <script>
     import { createUser } from '../firebase/config'
-    import { reactive} from 'vue'
-    import { CometChat } from "@cometchat-pro/chat";
-    import firebase from 'firebase';
-    import "firebase/auth";
+    import { reactive } from 'vue'
 
     export default{
         name:'SignUpView',
         setup() {
-            const form = reactive({ email: '', password: '', passwordConfirm: '', username: '', name: ''})
+            const form = reactive({ name: '', username: '', email: '', password: ''})
+
             const onSubmit = async () => {
                 await createUser({ ...form })
+                form.name = ''
+                form.username = ''
                 form.email = ''
                 form.password = ''
-                form.username = ''
-                form.name = ''
             }
+
             return { form, onSubmit }
-        },
-        
-        data(){
-            return {
-                username : "",
-                name : "",
-            };
-        },
-        methods:{
-            pressed() {
-            firebase
-                .auth()
-                .createUserWithEmailAndPassword(this.form.email, this.form.password)
-                .then(() => {
-                console.log("Successfully Registered!");
-                })
-                .catch(error => (this.error = error));
-            },
-
-            createchatuser() {
-            let AUTH_KEY='9018a57a030873ee45fe5b5549e917d60b184f10';
-            var UID = this.form.username;
-            var name = this.form.name;
-
-            var user = new CometChat.User(UID);
-                user.setName(name);
-
-            CometChat.createUser(user, AUTH_KEY).then(
-            user => {
-                console.log("user created", user);
-                    this.$router.push({
-                        name: "SignIn"
-                    })
-            },error => {
-                console.log("error", error);
-            }
-            );
-            }
         }
     }
 
