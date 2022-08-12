@@ -128,7 +128,7 @@
                 if (!this.v$.$error) {
                     alert('Form successfully submitted')
                 }else{
-                    alert('form failed validation')
+                    alert('Form failed validation')
                 }
             },
             pressed() {

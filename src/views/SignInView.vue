@@ -28,9 +28,9 @@
                 </form>
                 <div class="error" v-if="error">{{error.message}}</div>
                 <div class="subtext text-center mt-5">
-                    <router-link to="/Forgot">
+                    <!-- <router-link to="/Forgot">
                         <p> Forgot Password?</p>
-                    </router-link>
+                    </router-link> -->
                     <router-link to="/">
                         <p> Go Back to Homepage</p>
                     </router-link>
@@ -63,7 +63,7 @@ import firebase from "firebase";
         .where("username", "==", userName)
         .where("password", "==", passWord)
         .get()
-        .then(() => {
+        .then(async () => {
             var AUTH_KEY ='9018a57a030873ee45fe5b5549e917d60b184f10';
             var UID = userName;
             CometChat.login(UID, AUTH_KEY).then(
