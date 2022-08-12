@@ -11,46 +11,50 @@
                             <h2 class="container__sign-heading text-center pt-5">SIGN-UP!</h2>
                             <h4 class="container__sign-subHeading text-center mb-5 mt-3">Create an account, it’s Free</h4>
 
-                            <form class="mx-1 mx-md-4" @submit.prevent="createchatuser(); onSubmit(); pressed();">
+                            <form class="mx-1 mx-md-4" @submit.prevent="createchatuser(); onSubmit(); pressed(); submitForm()">
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="text" id="form3Example1c" class="form-control" placeholder="Your Full Name" v-model="form.name" />
-                                    <!-- <label class="form-label" for="form3Example1c">Your Name</label> -->
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="text" id="form3Example2c" class="form-control" placeholder="Username" v-model="form.username" />
-                                    <!-- <label class="form-label" for="form3Example3c">Your Username</label> -->
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="email" id="form3Example3c" class="form-control" placeholder="Email" v-model="form.email" />
-                                    <!-- <label class="form-label" for="form3Example3c">Your Email</label> -->
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="password" id="form3Example4c" class="form-control" placeholder="Password" v-model="form.password" />
-                                    <!-- <label class="form-label" for="form3Example4c">Password</label> -->
                                 </div>
                             </div>
 
                             <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                 <div class="form-outline flex-fill mb-0">
                                     <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat Password" v-model="form.passwordConfirm" />
-                                    <!-- <label class="form-label" for="form3Example4cd">Repeat your password</label> -->
                                 </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <i class="fa-solid fa-mars-and-venus fa-lg me-3 fa-fw"></i>
+                                <select class="container__form-select form-select-sm flex-fill mb-0 ">
+                                    <option selected>Gender</option>
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                </select>
                             </div>
 
                             <div class="form-check justify-content-center mb-5">
@@ -59,10 +63,13 @@
                                 I agree all statements in Terms of service
                                 </label>
                             </div>
+
                             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                 <button class="container__btn2 mx-0 mb-3 w-100" type="submit" >Register</button>
                             </div>
+
                         </form>
+
                         <div class="error" v-if="error">{{error.message}}</div>
                             
 
@@ -88,6 +95,8 @@
     import { CometChat } from "@cometchat-pro/chat";
     import firebase from 'firebase';
     import "firebase/auth";
+    import useVuelidate from "@vuelidate/core"
+    import {required, email} from "@vuelidate/validators"
 
     export default{
         name:'SignUpView',
@@ -100,16 +109,28 @@
                 form.username = ''
                 form.name = ''
             }
-            return { form, onSubmit }
+            return { v$:useVuelidate(), form, onSubmit }
         },
-        
-        data(){
-            return {
-                username : "",
-                name : "",
-            };
+        validations(){
+        return{
+            form: {
+                password: {required},
+                confirm: {required},
+                name: {required},
+                username: {required},
+                email: {required, email},
+            },
+            }
         },
         methods:{
+            submitForm(){
+                this.v$.$validate()
+                if (!this.v$.$error) {
+                    alert('Form successfully submitted')
+                }else{
+                    alert('form failed validation')
+                }
+            },
             pressed() {
             firebase
                 .auth()
@@ -176,7 +197,11 @@
             background-color: $btnColor;
         }
 
-        
+        &__form-select{
+            border-radius: 2rem;
+            border: none;
+            height: 2rem;
+        }
     }
 }
 
